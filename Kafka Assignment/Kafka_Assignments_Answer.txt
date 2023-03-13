@@ -1,0 +1,20 @@
+a.) Use "group.id" property in consumer config for both consumers and mention different group_ids in kafka_consumer_1.py & kafka_consumer_2.py,
+        apply "earliest" offset property in both consumers and run these two consumers from two different terminals. Calculate how many records each consumer
+        consumed and printed on the terminal
+
+ANS - consumer1 read --> 12758
+      consumer2 read --> 12826
+
+b.) Use "group.id" property in consumer config for both consumers and mention same group_ids in kafka_consumer_1.py & kafka_consumer_2.py,
+        apply "earliest" offset property in both consumers and run these two consumers from two different terminals. Calculate how many records each consumer
+        consumed and printed on the terminal
+
+ANS - consumer1 read --> 4239
+      consumer2 read --> 8587
+      total messages both read --> 12826
+
+c. ) Once above questions are done, write another kafka consumer to read data from kafka topic and from the consumer code create one csv file "output.csv"
+      and append consumed records output.csv file
+
+
+
